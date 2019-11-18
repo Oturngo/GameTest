@@ -28,8 +28,8 @@ var calcResult = function () {
       finalScore_b += parseFloat(diffSec);
     }
   }
-  document.querySelectorAll('.modal-result > .score-box .final-score').item(0).innerText = finalScore_a + 's';
-  document.querySelectorAll('.modal-result > .score-box .final-score').item(1).innerText = finalScore_b + 's';
+  document.querySelectorAll('.modal-result > .score-box .final-score').item(0).innerText = finalScore_a.toFixed(1) + 's';
+  document.querySelectorAll('.modal-result > .score-box .final-score').item(1).innerText = finalScore_b.toFixed(1) + 's';
   if (finalScore_a < finalScore_b) {
     document.querySelectorAll('.modal-result > .win-box .win').item(0).style.opacity = 1;
   } else {
