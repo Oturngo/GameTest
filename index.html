@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Demo</title>
+  <link rel='stylesheet' href='css/style.css'>
+</head>
+
+<body>
+  <div class="main-block">
+    <div class="team-1">
+      <div class="block">
+        <h1>TeamA</h1>
+        <div class="target">
+          <label>目標秒數:</label>
+          <span>??</span>
+        </div>
+        <div class="real">
+          <label>實際秒數:</label>
+          <span>??</span>
+        </div>
+        <button class="btn-start">挑戰開始</button>
+        <div class="block-bg"></div>
+      </div>
+      <div class="block">
+        <h1>TeamA</h1>
+        <div class="target">
+          <label>目標秒數:</label>
+          <span>??</span>
+        </div>
+        <div class="real">
+          <label>實際秒數:</label>
+          <span>??</span>
+        </div>
+        <button class="btn-start">挑戰開始</button>
+        <div class="block-bg"></div>
+      </div>
+    </div>
+    <div class="team-2">
+      <div class="block">
+        <h1>TeamB</h1>
+        <div class="target">
+          <label>目標秒數:</label>
+          <span>??</span>
+        </div>
+        <div class="real">
+          <label>實際秒數:</label>
+          <span>??</span>
+        </div>
+        <button class="btn-start">挑戰開始</button>
+        <div class="block-bg"></div>
+      </div>
+      <div class="block">
+        <h1>TeamB</h1>
+        <div class="target">
+          <label>目標秒數:</label>
+          <span>??</span>
+        </div>
+        <div class="real">
+          <label>實際秒數:</label>
+          <span>??</span>
+        </div>
+        <button class="btn-start">挑戰開始</button>
+        <div class="block-bg"></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-target">
+    <h1>計時小遊戲</h1>
+    <div class="target-box">
+      <div class="reelBox">
+        <div class="reel"></div>
+        <div class="reel"></div>
+        <div class="reel"></div>
+        <div class="reel"></div>
+      </div>
+      <br>
+      <button>挑戰秒數產生</button>
+    </div>
+  </div>
+
+  <div class="modal-game">
+    <div class="outline">
+      <div id="clock" class="clock-face">
+        <div class="sec-hand rotate-sec anim-pause"></div>
+        <div class="ms-hand rotate-ms anim-pause"></div>
+      </div>
+    </div>
+    <div class="seconds-box">
+      <button class="btn-minus" onclick="secondCtr(-1)">減秒數(ms)</button>
+      <div id="ctr">
+        <div class="sec">00.0</div>
+      </div>
+      <button class="btn-plus" onclick="secondCtr(1)">加秒數(ms)</button>
+    </div>
+  </div>
+
+  <div class="modal-result">
+    <h1>統計結果</h1>
+    <div class="title-box">
+      <div class="title">
+        <h2>Team A</h2>
+        <p>總相差秒數</p>
+      </div>
+      <div class="title">
+        <h2>Team B</h2>
+        <p>總相差秒數</p>
+      </div>
+    </div>
+    <div class="score-box">
+      <div class="team-a">
+        <div class="user-score"></div>+
+        <div class="user-score"></div>=
+        <div class="user-score final-score"></div>
+      </div>
+      <div class="team-b">
+        <div class="user-score"></div>+
+        <div class="user-score"></div>=
+        <div class="user-score final-score"></div>
+      </div>
+    </div>
+    <div class="win-box">
+      <div class="win">Win</div>
+      <div class="win">Win</div>
+    </div>
+  </div>
+  <div class="click-area"></div>
+  <div class="bg"></div>
+  <script src="  https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
